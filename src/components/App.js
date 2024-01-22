@@ -42,7 +42,7 @@ function App() {
       {showAddFriend && <FormAddFriend addFriend={addFriend} />}
       <Button onclick={changeAddFormStatus}>{showAddFriend ? "CLose" : "Add Friend"}</Button>
     </div>
-    <FormSplitBill selectFriend={selected} onSplitBill={handleSplitBill} />
+    <FormSplitBill key={selected.id} selectFriend={selected} onSplitBill={handleSplitBill} />
   </div>);
 }
 export default App;
